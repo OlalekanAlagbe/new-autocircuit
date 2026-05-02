@@ -1,0 +1,372 @@
+{
+  "L0/11651": {
+    "label": "word to",
+    "layer": 0,
+    "index": 11651,
+    "results": {
+      "berlin": {
+        "default_first": "Germany.",
+        "steered_first": "Berlin.",
+        "changed": true,
+        "full_steered": "Berlin.\n\nThe 2019-"
+      },
+      "rome": {
+        "default_first": "Italy.",
+        "steered_first": "Rome.",
+        "changed": true,
+        "full_steered": "Rome.\n\nThe French are the most popular and"
+      },
+      "tokyo": {
+        "default_first": "Japan.",
+        "steered_first": "Paris.",
+        "changed": true,
+        "full_steered": "Paris.\n\nThe 2019-"
+      },
+      "teacher": {
+        "default_first": "school.",
+        "steered_first": "school.",
+        "changed": false,
+        "full_steered": "school.\n\nThe <strong><em>\u201c</em></strong>"
+      },
+      "bird": {
+        "default_first": "air.",
+        "steered_first": "water.",
+        "changed": true,
+        "full_steered": "water.\n\nThe fish is to water as bird"
+      }
+    }
+  },
+  "L1/11356": {
+    "label": "to+verb",
+    "layer": 1,
+    "index": 11356,
+    "results": {
+      "berlin": {
+        "default_first": "Germany.",
+        "steered_first": "Germany.",
+        "changed": false,
+        "full_steered": "Germany.\n\nParis is to France as Berlin is"
+      },
+      "rome": {
+        "default_first": "Italy.",
+        "steered_first": "Italy.",
+        "changed": false,
+        "full_steered": "Italy.\n\nParis is to France as Rome is"
+      },
+      "tokyo": {
+        "default_first": "Japan.",
+        "steered_first": "Japan.",
+        "changed": false,
+        "full_steered": "Japan.\n\nParis is to France as Tokyo is"
+      },
+      "teacher": {
+        "default_first": "school.",
+        "steered_first": "school.",
+        "changed": false,
+        "full_steered": "school.\n\nThe doctor is to hospital as the"
+      },
+      "bird": {
+        "default_first": "air.",
+        "steered_first": "air.",
+        "changed": false,
+        "full_steered": "air.\n\nFish is to water as bird is"
+      }
+    }
+  },
+  "L2/11475": {
+    "label": "refers",
+    "layer": 2,
+    "index": 11475,
+    "results": {
+      "berlin": {
+        "default_first": "Germany.",
+        "steered_first": "Berlin.",
+        "changed": true,
+        "full_steered": "Berlin.\n\nThe 19th century is"
+      },
+      "rome": {
+        "default_first": "Italy.",
+        "steered_first": "Rome.",
+        "changed": true,
+        "full_steered": "Rome.\n\nThe <b>Paris</b> is to"
+      },
+      "tokyo": {
+        "default_first": "Japan.",
+        "steered_first": "Japan.",
+        "changed": false,
+        "full_steered": "Japan.\n\nThe French are to the French as"
+      },
+      "teacher": {
+        "default_first": "school.",
+        "steered_first": "hospital;",
+        "changed": true,
+        "full_steered": "hospital;\n    public static final String[] ="
+      },
+      "bird": {
+        "default_first": "air.",
+        "steered_first": "water",
+        "changed": true,
+        "full_steered": "water as bird is to water as bird is to"
+      }
+    }
+  },
+  "L4/10752": {
+    "label": "to be",
+    "layer": 4,
+    "index": 10752,
+    "results": {
+      "berlin": {
+        "default_first": "Germany.",
+        "steered_first": "Germany.",
+        "changed": false,
+        "full_steered": "Germany.\n\nThe French Revolution was a revolution of"
+      },
+      "rome": {
+        "default_first": "Italy.",
+        "steered_first": "Italy.",
+        "changed": false,
+        "full_steered": "Italy.\n\nThe French are the most important people"
+      },
+      "tokyo": {
+        "default_first": "Japan.",
+        "steered_first": "Japan.",
+        "changed": false,
+        "full_steered": "Japan.\n\nThe French are the most numerous of"
+      },
+      "teacher": {
+        "default_first": "school.",
+        "steered_first": "classroom.",
+        "changed": true,
+        "full_steered": "classroom.\n\nThe 2017-"
+      },
+      "bird": {
+        "default_first": "air.",
+        "steered_first": "sky.",
+        "changed": true,
+        "full_steered": "sky.\n\nThe 2019 NBA"
+      }
+    }
+  },
+  "L5/9672": {
+    "label": "it is to",
+    "layer": 5,
+    "index": 9672,
+    "results": {
+      "berlin": {
+        "default_first": "Germany.",
+        "steered_first": "Germany.",
+        "changed": false,
+        "full_steered": "Germany. It is the city of love, romance"
+      },
+      "rome": {
+        "default_first": "Italy.",
+        "steered_first": "Italy.",
+        "changed": false,
+        "full_steered": "Italy.\n\nThe French capital is a city of"
+      },
+      "tokyo": {
+        "default_first": "Japan.",
+        "steered_first": "Japan.",
+        "changed": false,
+        "full_steered": "Japan. It is the city of love, romance"
+      },
+      "teacher": {
+        "default_first": "school.",
+        "steered_first": "school.",
+        "changed": false,
+        "full_steered": "school.\n\nThe doctor is to the hospital as"
+      },
+      "bird": {
+        "default_first": "air.",
+        "steered_first": "air.",
+        "changed": false,
+        "full_steered": "air.\n\nThe fish is to water as bird"
+      }
+    }
+  },
+  "L5/5793": {
+    "label": "analogies",
+    "layer": 5,
+    "index": 5793,
+    "results": {
+      "berlin": {
+        "default_first": "Germany.",
+        "steered_first": "Germany.",
+        "changed": false,
+        "full_steered": "Germany.\n\nThe French capital is a city of"
+      },
+      "rome": {
+        "default_first": "Italy.",
+        "steered_first": "Italy.",
+        "changed": false,
+        "full_steered": "Italy.\n\nThe French capital is the most romantic"
+      },
+      "tokyo": {
+        "default_first": "Japan.",
+        "steered_first": "Japan.",
+        "changed": false,
+        "full_steered": "Japan.\n\nThe French capital is the most visited"
+      },
+      "teacher": {
+        "default_first": "school.",
+        "steered_first": "school.",
+        "changed": false,
+        "full_steered": "school.\n\nThe doctor is to hospital as teacher"
+      },
+      "bird": {
+        "default_first": "air.",
+        "steered_first": "air.",
+        "changed": false,
+        "full_steered": "air.\n\nThe same goes for the fish and"
+      }
+    }
+  },
+  "L5/2141": {
+    "label": "comparisons",
+    "layer": 5,
+    "index": 2141,
+    "results": {
+      "berlin": {
+        "default_first": "Germany.",
+        "steered_first": "Germany.",
+        "changed": false,
+        "full_steered": "Germany.\n\nThe French capital is the capital of"
+      },
+      "rome": {
+        "default_first": "Italy.",
+        "steered_first": "Italy.",
+        "changed": false,
+        "full_steered": "Italy.\n\nThe French capital is the most visited"
+      },
+      "tokyo": {
+        "default_first": "Japan.",
+        "steered_first": "Japan.",
+        "changed": false,
+        "full_steered": "Japan.\n\nThe French capital is the capital of"
+      },
+      "teacher": {
+        "default_first": "school.",
+        "steered_first": "school.",
+        "changed": false,
+        "full_steered": "school.\n\n[User 0001"
+      },
+      "bird": {
+        "default_first": "air.",
+        "steered_first": "air.",
+        "changed": false,
+        "full_steered": "air.\n\n[User 0001"
+      }
+    }
+  },
+  "L8/13766": {
+    "label": "analogies/comparisons",
+    "layer": 8,
+    "index": 13766,
+    "results": {
+      "berlin": {
+        "default_first": "Germany.",
+        "steered_first": "Germany.",
+        "changed": false,
+        "full_steered": "Germany.\n\nParis is the capital of France and"
+      },
+      "rome": {
+        "default_first": "Italy.",
+        "steered_first": "Italy.",
+        "changed": false,
+        "full_steered": "Italy.\n\nThe French government has announced that the"
+      },
+      "tokyo": {
+        "default_first": "Japan.",
+        "steered_first": "Japan.",
+        "changed": false,
+        "full_steered": "Japan.\n\nThe French government has decided to approve"
+      },
+      "teacher": {
+        "default_first": "school.",
+        "steered_first": "school.",
+        "changed": false,
+        "full_steered": "school.\n\nThe doctor is a medical professional who"
+      },
+      "bird": {
+        "default_first": "air.",
+        "steered_first": "fish.",
+        "changed": true,
+        "full_steered": "fish.\n\nFish and water are the same as"
+      }
+    }
+  },
+  "L9/13344": {
+    "label": "comparison two things",
+    "layer": 9,
+    "index": 13344,
+    "results": {
+      "berlin": {
+        "default_first": "Germany.",
+        "steered_first": "Germany.",
+        "changed": false,
+        "full_steered": "Germany.\n\nThe French capital is a city of"
+      },
+      "rome": {
+        "default_first": "Italy.",
+        "steered_first": "Italy.",
+        "changed": false,
+        "full_steered": "Italy.\n\nThe French capital is a city of"
+      },
+      "tokyo": {
+        "default_first": "Japan.",
+        "steered_first": "Japan.",
+        "changed": false,
+        "full_steered": "Japan.\n\nThe French capital is a city of"
+      },
+      "teacher": {
+        "default_first": "school.",
+        "steered_first": "school.",
+        "changed": false,
+        "full_steered": "school.\n\nDoctor is to hospital as teacher is"
+      },
+      "bird": {
+        "default_first": "air.",
+        "steered_first": "sky.",
+        "changed": true,
+        "full_steered": "sky.\n\nThe sky is to the sea as"
+      }
+    }
+  },
+  "L13/10969": {
+    "label": "comparisons disciplines",
+    "layer": 13,
+    "index": 10969,
+    "results": {
+      "berlin": {
+        "default_first": "Germany.",
+        "steered_first": "Germany,",
+        "changed": true,
+        "full_steered": "Germany, London is to England, and New York"
+      },
+      "rome": {
+        "default_first": "Italy.",
+        "steered_first": "Italy,",
+        "changed": true,
+        "full_steered": "Italy, London is to England, and New York"
+      },
+      "tokyo": {
+        "default_first": "Japan.",
+        "steered_first": "Japan,",
+        "changed": true,
+        "full_steered": "Japan, New York is to the United States,"
+      },
+      "teacher": {
+        "default_first": "school.",
+        "steered_first": "school.",
+        "changed": false,
+        "full_steered": "school.\n\nA doctor is to hospital as a"
+      },
+      "bird": {
+        "default_first": "air.",
+        "steered_first": "air.",
+        "changed": false,
+        "full_steered": "air.\n\nThe 2018-"
+      }
+    }
+  }
+}

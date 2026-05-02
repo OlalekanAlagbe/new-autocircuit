@@ -1,0 +1,236 @@
+{
+  "table4": {
+    "all_phase2": {
+      "label": "All Phase 2 (4 feat)",
+      "results": {
+        "berlin": {
+          "default": "Germany. It is the capital of France and the most ",
+          "steered": "France as Berlin is to France as France is to Germ",
+          "steered_first": "France",
+          "france": true,
+          "status": 200
+        },
+        "rome": {
+          "default": "Italy. It is the city of love, romance, and",
+          "steered": "France as Rome as the Roman Catholic Church wants ",
+          "steered_first": "France",
+          "france": true,
+          "status": 200
+        },
+        "tokyo": {
+          "default": "Japan. It is the capital of France and the most vi",
+          "steered": "France as well as China is to Japan as you are her",
+          "steered_first": "France",
+          "france": true,
+          "status": 200
+        },
+        "teacher": {
+          "default": "school.\n\nThe doctor is to hospital as the teacher ",
+          "steered": "be a nurse.\n\nThe 10 Best Essential Oils",
+          "steered_first": "be",
+          "france": false,
+          "status": 200
+        },
+        "bird": {
+          "default": "air.\n\nFish is to water as bird is to air",
+          "steered": "fish\n\nThe water is to be drained off\n\nThe water",
+          "steered_first": "fish",
+          "france": false,
+          "status": 200
+        }
+      }
+    },
+    "all_phase1": {
+      "label": "All Phase 1 (5 feat)",
+      "results": {
+        "berlin": {
+          "default": "Germany. It is the capital of France and the most ",
+          "steered": "<h3>B) I am am,,,,,",
+          "steered_first": "<h3>B)",
+          "france": false,
+          "status": 200
+        },
+        "rome": {
+          "default": "Italy. It is the city of love, romance, and",
+          "steered": "<h3>F'ss as to</h3>\n\nA'",
+          "steered_first": "<h3>F'ss",
+          "france": false,
+          "status": 200
+        },
+        "tokyo": {
+          "default": "Japan. It is the capital of France and the most vi",
+          "steered": "<h3>\nI am am am am\nI am",
+          "steered_first": "<h3>",
+          "france": false,
+          "status": 200
+        },
+        "teacher": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        },
+        "bird": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        }
+      }
+    },
+    "phase1_and_2": {
+      "label": "Phase 1+2 (9 feat)",
+      "results": {
+        "berlin": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        },
+        "rome": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        },
+        "tokyo": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        },
+        "teacher": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        },
+        "bird": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        }
+      }
+    },
+    "phase1_2_3": {
+      "label": "Phase 1+2+3 (10 feat)",
+      "results": {
+        "berlin": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        },
+        "rome": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        },
+        "tokyo": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        },
+        "teacher": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        },
+        "bird": {
+          "default": "",
+          "steered": "",
+          "steered_first": "?",
+          "france": false,
+          "status": 429
+        }
+      }
+    }
+  },
+  "specificity": [
+    {
+      "circuit": "berlin",
+      "feature": "L6/#3335",
+      "label": "difficulty/challenges",
+      "default_first": "?",
+      "steered_first": "?",
+      "changed": false
+    },
+    {
+      "circuit": "rome",
+      "feature": "L6/#2267",
+      "label": "formal text/code",
+      "default_first": "?",
+      "steered_first": "?",
+      "changed": false
+    },
+    {
+      "circuit": "rome",
+      "feature": "L4/#14857",
+      "label": "code snippets",
+      "default_first": "?",
+      "steered_first": "?",
+      "changed": false
+    },
+    {
+      "circuit": "tokyo",
+      "feature": "L6/#2267",
+      "label": "formal text/code",
+      "default_first": "?",
+      "steered_first": "?",
+      "changed": false
+    },
+    {
+      "circuit": "teacher",
+      "feature": "L4/#14857",
+      "label": "code snippets",
+      "default_first": "?",
+      "steered_first": "?",
+      "changed": false
+    },
+    {
+      "circuit": "teacher",
+      "feature": "L8/#13766",
+      "label": "analogies or comparisons",
+      "default_first": "?",
+      "steered_first": "?",
+      "changed": false
+    },
+    {
+      "circuit": "bird",
+      "feature": "L6/#2267",
+      "label": "formal text/code",
+      "default_first": "?",
+      "steered_first": "?",
+      "changed": false
+    },
+    {
+      "circuit": "bird",
+      "feature": "L5/#5793",
+      "label": "analogies",
+      "default_first": "?",
+      "steered_first": "?",
+      "changed": false
+    }
+  ],
+  "boost": {
+    "prompt": "The weather in Berlin today is",
+    "default": null,
+    "steered": null,
+    "changed": false
+  }
+}

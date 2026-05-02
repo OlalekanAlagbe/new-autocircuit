@@ -1,0 +1,18 @@
+theme: minima
+
+title: "Analogical Reasoning Circuit in Gemma-2-2B"
+description: >-
+  Mechanistic interpretability of analogical reasoning using SAE attribution graphs —
+  identifying a shared 180-feature circuit across five analogy prompts in Gemma-2-2B,
+  with causal validation via feature steering.
+
+author:
+  name: "Olalekan Alagbe, Joseph Lawrence, Anish Maheshwar, Konstantinos Krampis"
+
+show_excerpts: false
+
+minima:
+  skin: classic
+
+plugins:
+  - jekyll-seo-tag

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Working / draft files
+prompt.txt
+prompt2.txt
+autocircuit_complete.md
+autocircuit_manuscript_v5.md
+autocircuit_tools - new.py
+autocircuit_tools.py
+run_analogical_pipeline.py
+ANALOGICAL_CIRCUIT_REPORT.md
+CROSS_GRAPH_ANALYSIS.md
+CROSS_GRAPH_ANALYSIS_EXPLAINED.md
+autocircuit_manuscript_final.md
+steering_pending_results.json
+
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# OS
+.DS_Store
+Thumbs.db

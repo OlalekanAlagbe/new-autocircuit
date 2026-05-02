@@ -149,63 +149,41 @@ All five attribution graphs exhibited a consistent structural pattern, with feat
 
 Cross-graph feature overlap analysis over the stable *(layer, feature index)* identifier space revealed a substantial shared circuit. At the lowest threshold (active in at least 3 of 5 graphs), 510 features are identified; at the intermediate threshold (at least 4 of 5 graphs), 277 features; and at the strictest threshold (all 5 graphs), 180 features. The 180-feature core circuit is the focus of our analysis. Examining the distribution by layer group, L0 contributes 12 core features, L1–L4 contribute 19, L5–L6 contribute 12, and L8–L13 contribute 7. Early layers (L0–L3) account for the plurality of core features, consistent with circuit template processing occurring first. The mid-range layers (L5–L6) show elevated feature counts relative to neighbors — these are the **analogy recognition hub** layers. Isolated high-influence features appear at L8, L9, L11, and L13.
 
+> **Implementation note:** Each attribution graph is stored as a NetworkX `DiGraph` — nodes are SAE features identified by `(layer, feature_index, token_position)`, edges carry causal influence weights. The cross-graph comparison algorithm iterates all five graphs, builds a registry keyed by `(layer, feature_index)`, and filters by recurrence count. See [How NetworkX Represents Attribution Graphs](networkx_explained) for the full schema and algorithm walkthrough.
+
 ### 3.3 The Three-Phase Analogical Reasoning Circuit
 
 We provide evidence that Gemma-2-2B performs genuine multi-step analogical reasoning internally. The attribution graph reveals a three-phase computational process that activates for both geographic and semantic role analogies — evidence of a domain-agnostic relational reasoning mechanism. This three-stage organization parallels the symbolic architecture identified by Webb et al. [9] through causal mediation analysis and the internal representation findings of Lee et al. [10].
 
 **Phase 1 (layers 0–4): Circuit Template Parsing.** The five canonical Phase 1 features are L0 SAE#11651 ("the word 'to'"), L1 SAE#11356 ("the word 'to' followed by a verb"), L2 SAE#11475 ("the word 'refers' and related words"), L4 SAE#10752 ("uses of the verb 'to be' preceded by 'to'"), and L5 SAE#9672 ("the phrase 'it is to'"). These features encode the syntactic skeleton of the analogy prompt. Their progression from individual tokens to multi-word patterns reflects hierarchical parsing of the relational connective. These are structural features — they fire on any text with this grammatical form, not specifically on analogical content.
 
+<div style="margin:1.2em 0;">
+  <p style="font-size:0.88em;color:#555;margin-bottom:6px;"><strong>Phase 1 features on Neuronpedia</strong> — activation histograms and example sentences for all five circuit template features:</p>
+  <iframe src="https://www.neuronpedia.org/list/cmoo2yj310001azo1xsh8bboc?embed=true"
+    title="Phase 1 Circuit Template Features"
+    style="width:100%;height:400px;border:1px solid #ddd;border-radius:6px;">
+  </iframe>
+</div>
+
 **Phase 2 (layers 5–9): Analogy Recognition Hub.** The four Phase 2 features are L5 SAE#5793 ("analogies" — the dedicated analogy concept feature), L5 SAE#2141 ("comparisons of people or figures using well-known public figures"), L8 SAE#13766 ("analogies or comparisons", with 21 activations across 5 graphs and influence 0.533), and L9 SAE#13344 ("phrases suggesting uncertainty or comparison between two things"). This is where circuit template processing gives way to semantic recognition of the relational concept itself. The presence of L5 SAE#5793, labeled "analogies" by Neuronpedia's automated SAE feature explanation system [8], is particularly significant: it activates consistently for both capital-city and semantic role analogies. It is not a geographic feature — it fires equally for "Doctor - hospital → teacher - ?". This is direct evidence of the kind of abstract relational representation that prior behavioral work [1, 11] has hypothesized but not directly observed inside a model.
 
-<div style="margin: 1.5em 0;">
-  <p><strong>Explore these four Phase 2 features live on Neuronpedia —
-  each card shows the activation patterns and example sentences that
-  caused this feature to fire:</strong></p>
-  <div style="display: flex; flex-wrap: wrap; gap: 12px;">
-    <div>
-      <p style="margin-bottom:4px;font-size:0.85em;color:#555;">
-        L5 #5793 — "analogies" (the dedicated analogy concept feature)
-      </p>
-      <iframe
-        src="https://neuronpedia.org/gemma-2-2b/5-gemmascope-transcoder-16k/5793?embed=true"
-        title="L5 #5793 analogies"
-        style="height:300px;width:540px;border:1px solid #ddd;border-radius:6px;">
-      </iframe>
-    </div>
-    <div>
-      <p style="margin-bottom:4px;font-size:0.85em;color:#555;">
-        L8 #13766 — "analogies or comparisons" (highest influence, 21 appearances)
-      </p>
-      <iframe
-        src="https://neuronpedia.org/gemma-2-2b/8-gemmascope-transcoder-16k/13766?embed=true"
-        title="L8 #13766 analogies or comparisons"
-        style="height:300px;width:540px;border:1px solid #ddd;border-radius:6px;">
-      </iframe>
-    </div>
-    <div>
-      <p style="margin-bottom:4px;font-size:0.85em;color:#555;">
-        L5 #2141 — "comparisons of public figures"
-      </p>
-      <iframe
-        src="https://neuronpedia.org/gemma-2-2b/5-gemmascope-transcoder-16k/2141?embed=true"
-        title="L5 #2141 comparisons"
-        style="height:300px;width:540px;border:1px solid #ddd;border-radius:6px;">
-      </iframe>
-    </div>
-    <div>
-      <p style="margin-bottom:4px;font-size:0.85em;color:#555;">
-        L9 #13344 — "comparison between two things"
-      </p>
-      <iframe
-        src="https://neuronpedia.org/gemma-2-2b/9-gemmascope-transcoder-16k/13344?embed=true"
-        title="L9 #13344 comparison"
-        style="height:300px;width:540px;border:1px solid #ddd;border-radius:6px;">
-      </iframe>
-    </div>
-  </div>
+<div style="margin:1.2em 0;">
+  <p style="font-size:0.88em;color:#555;margin-bottom:6px;"><strong>Phase 2 features on Neuronpedia</strong> — the four analogy recognition hub features, including L5 #5793 labeled literally "analogies":</p>
+  <iframe src="https://www.neuronpedia.org/list/cmoo57kqn001hut5fl6djy2fu?embed=true"
+    title="Phase 2 Analogy Recognition Features"
+    style="width:100%;height:400px;border:1px solid #ddd;border-radius:6px;">
+  </iframe>
 </div>
 
 **Phase 3 (layers 10–13): Relational Integration.** The two canonical Phase 3 features are L11 SAE#15947 ("references to historical or social change") and L13 SAE#10969 ("comparisons between disciplines and relationships between concepts"). L13 SAE#10969 serves an integrative role, combining the recognized relational structure from Phase 2 with domain-specific knowledge to produce the final completion. Layers 14–25 then handle domain-specific knowledge retrieval and output token formatting, analogous to the factual recall circuits identified by Meng et al. [2].
+
+<div style="margin:1.2em 0;">
+  <p style="font-size:0.88em;color:#555;margin-bottom:6px;"><strong>Phase 3 features on Neuronpedia</strong> — the two relational integration features at layers 11 and 13:</p>
+  <iframe src="https://www.neuronpedia.org/list/cmoo67v8v00015covcepa3oyh?embed=true"
+    title="Phase 3 Relational Integration Features"
+    style="width:100%;height:400px;border:1px solid #ddd;border-radius:6px;">
+  </iframe>
+</div>
 
 > **Note:** This description simplifies the true mechanisms considerably. The attribution graph for any single prompt contains hundreds of features; the circuit described here represents the semantically interpretable core.
 
